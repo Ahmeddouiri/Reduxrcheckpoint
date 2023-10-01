@@ -37,7 +37,7 @@ function Task({ task }) {
 
       <Card.Header style={{ width: '100%' }}> {task.id} :
       <Form.Control readOnly={editing} onClick={() => handleEditing() } style={{ width: '100%', alignItems:'center'}} size="sm"
-        type="text" value="ddddd"
+        type="text" value=""
         placeholder={task.title}
         onChange={(e) => setEdittitle(e.target.value)}
         />
