@@ -13,6 +13,7 @@ function Task({ task }) {
   const handleEditing = () => {
     setEditing(!editing);
     setOldtitle(task.title)
+    
 
   };
 
@@ -37,7 +38,11 @@ function Task({ task }) {
 
       <Card.Header style={{ width: '100%' }}> {task.id} :
       <Form.Control readOnly={editing} onClick={() => handleEditing() } style={{ width: '100%', alignItems:'center'}} size="sm"
+<<<<<<< HEAD
+        type="text" 
+=======
         type="text" value=""
+>>>>>>> 46bf9b4cac937f97406db25085ef56f96c79dc1f
         placeholder={task.title}
         onChange={(e) => setEdittitle(e.target.value)}
         />
